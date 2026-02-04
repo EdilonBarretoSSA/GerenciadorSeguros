@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\edilo\\OneDrive\\Documentos\\GitHub\\GerenciadorSeguros\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92E7B393-8FEA-4006-9E84-A94A9C2FDF8F}|ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\WebAPI.csproj|c:\\users\\edilo\\onedrive\\documentos\\github\\gerenciadorseguros\\contratacaoservice\\adapters\\contratacaoapi\\contratacaoapi\\controllers\\contratacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92E7B393-8FEA-4006-9E84-A94A9C2FDF8F}|ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\WebAPI.csproj|solutionrelative:contratacaoservice\\adapters\\contratacaoapi\\contratacaoapi\\controllers\\contratacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{698B7AFF-B1E0-4DB9-8BF0-F26D183D95D9}|PropostaService\\Adapters\\Infra.Data\\Infra.Data.csproj|c:\\users\\edilo\\onedrive\\documentos\\github\\gerenciadorseguros\\propostaservice\\adapters\\infra.data\\context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{698B7AFF-B1E0-4DB9-8BF0-F26D183D95D9}|PropostaService\\Adapters\\Infra.Data\\Infra.Data.csproj|solutionrelative:propostaservice\\adapters\\infra.data\\context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92E7B393-8FEA-4006-9E84-A94A9C2FDF8F}|ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\WebAPI.csproj|c:\\users\\edilo\\onedrive\\documentos\\github\\gerenciadorseguros\\contratacaoservice\\adapters\\contratacaoapi\\contratacaoapi\\controllers\\contratacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92E7B393-8FEA-4006-9E84-A94A9C2FDF8F}|ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\WebAPI.csproj|solutionrelative:contratacaoservice\\adapters\\contratacaoapi\\contratacaoapi\\controllers\\contratacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBA0BA4-3EBE-4189-B7FD-898A1FAFA5B4}|PropostaService\\Adapters\\PropostaAPI\\WebAPI.csproj|c:\\users\\edilo\\onedrive\\documentos\\github\\gerenciadorseguros\\propostaservice\\adapters\\propostaapi\\controllers\\propostacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -39,26 +39,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContratacaoController.cs",
               "DocumentMoniker": "C:\\Users\\edilo\\OneDrive\\Documentos\\GitHub\\GerenciadorSeguros\\ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\Controllers\\ContratacaoController.cs",
               "RelativeDocumentMoniker": "ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\Controllers\\ContratacaoController.cs",
               "ToolTip": "C:\\Users\\edilo\\OneDrive\\Documentos\\GitHub\\GerenciadorSeguros\\ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\Controllers\\ContratacaoController.cs",
               "RelativeToolTip": "ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\Controllers\\ContratacaoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T13:41:42.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DataBaseContext.cs",
               "DocumentMoniker": "C:\\Users\\edilo\\OneDrive\\Documentos\\GitHub\\GerenciadorSeguros\\PropostaService\\Adapters\\Infra.Data\\Context\\DataBaseContext.cs",
               "RelativeDocumentMoniker": "PropostaService\\Adapters\\Infra.Data\\Context\\DataBaseContext.cs",
               "ToolTip": "C:\\Users\\edilo\\OneDrive\\Documentos\\GitHub\\GerenciadorSeguros\\PropostaService\\Adapters\\Infra.Data\\Context\\DataBaseContext.cs",
               "RelativeToolTip": "PropostaService\\Adapters\\Infra.Data\\Context\\DataBaseContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wB8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T13:29:42.553Z",
               "EditorCaption": ""
