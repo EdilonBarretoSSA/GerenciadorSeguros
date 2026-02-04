@@ -20,7 +20,7 @@ API responsável pelo gerenciamento de propostas e contratação de seguros.
 ## ▶️ Como executar
 
 No bash
-git clone https://github.com/seu-usuario/gerenciador-seguros.git
+git clone https://github.com/EdilonBarretoSSA/GerenciadorSeguros
 cd gerenciador-seguros
 dotnet restore
 dotnet run
