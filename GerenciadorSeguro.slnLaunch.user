@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ContratacaoService\\Adapters\\ContratacaoAPI\\ContratacaoAPI\\WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PropostaService\\Adapters\\PropostaAPI\\WebAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

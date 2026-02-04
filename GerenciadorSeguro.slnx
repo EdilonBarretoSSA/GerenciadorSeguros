@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="/ContratacaoService/" />
+  <Folder Name="/ContratacaoService/Adapters/" />
+  <Folder Name="/ContratacaoService/Adapters/Primary/">
+    <Project Path="ContratacaoService/Adapters/ContratacaoAPI/ContratacaoAPI/WebAPI.csproj" Id="92e7b393-8fea-4006-9e84-a94a9c2fdf8f" />
+  </Folder>
+  <Folder Name="/ContratacaoService/Adapters/Second/">
+    <Project Path="ContratacaoService/Adapters/Infra.Data/ExternalServices.csproj" Id="577922a5-8d41-4678-bdf5-4e7ca1591e11" />
+  </Folder>
+  <Folder Name="/ContratacaoService/Core/">
+    <Project Path="ContratacaoService/Core/Application/Application.csproj" Id="4c26e8d0-1072-4fba-a63f-6aebdd6d2eb8" />
+    <Project Path="ContratacaoService/Core/Domain/Domain.csproj" Id="935288d1-07db-4d3f-af06-d01005db918f" />
+  </Folder>
+  <Folder Name="/ContratacaoService/UnitTest/">
+    <Project Path="ContratacaoServiceTest/ContratacaoServiceTest.csproj" Id="62ab37aa-cb85-428f-92ff-db85b68905cf" />
+  </Folder>
+  <Folder Name="/PropostaService/" />
+  <Folder Name="/PropostaService/Adapters/" />
+  <Folder Name="/PropostaService/Adapters/Primary/">
+    <Project Path="PropostaService/Adapters/PropostaAPI/WebAPI.csproj" Id="8cba0ba4-3ebe-4189-b7fd-898a1fafa5b4" />
+  </Folder>
+  <Folder Name="/PropostaService/Adapters/Secondary/">
+    <Project Path="PropostaService/Adapters/Infra.Data/Infra.Data.csproj" Id="698b7aff-b1e0-4db9-8bf0-f26d183d95d9" />
+  </Folder>
+  <Folder Name="/PropostaService/Core/">
+    <Project Path="PropostaService/Core/Application/Application.csproj" Id="3f764800-7930-4d02-ac4b-63e19ce0803a" />
+    <Project Path="PropostaService/Core/Domain/Domain.csproj" Id="a1bbbea0-f234-4eea-80ce-1a8dc649757f" />
+  </Folder>
+  <Folder Name="/PropostaService/UnitTest/">
+    <Project Path="PropostaServiceTest/PropostaServiceTest.csproj" Id="f81e4437-e4aa-4fca-8d83-3cf072b762e9" />
+  </Folder>
+</Solution>

@@ -1,0 +1,272 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Proposta Seguro API",
+    "description": "API para gerenciar propostas 'de seguro",
+    "version": "v1"
+  },
+  "paths": {
+    "/Criar": {
+      "post": {
+        "tags": [
+          "Proposta"
+        ],
+        "description": "Método responsável pela criação das propostas de seguro",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropostaSeguro"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropostaSeguro"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropostaSeguro"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Listar": {
+      "get": {
+        "tags": [
+          "Proposta"
+        ],
+        "description": "Método responsável por listar as propostas de seguro",
+        "parameters": [
+          {
+            "name": "numeroProposta",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "cpf",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "nome",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rg",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropostaSeguro"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropostaSeguro"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropostaSeguro"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AlterarStatus": {
+      "get": {
+        "tags": [
+          "Proposta"
+        ],
+        "description": "Método responsável por alterar os status das propostas de seguro",
+        "parameters": [
+          {
+            "name": "numeroProposta",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "rg": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataExpedicao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "orgaoExpedicao": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "endereco": {
+            "$ref": "#/components/schemas/Endereco"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EStatusProposta": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Endereco": {
+        "type": "object",
+        "properties": {
+          "cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "logradouro": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "complemento": {
+            "type": "string",
+            "nullable": true
+          },
+          "bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "uf": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropostaSeguro": {
+        "type": "object",
+        "properties": {
+          "numeroProposta": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricaoSeguro": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCriacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataInícioVigencia": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataFimVigencia": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "$ref": "#/components/schemas/EStatusProposta"
+          },
+          "valorPremio": {
+            "type": "number",
+            "format": "double"
+          },
+          "valorParcela": {
+            "type": "number",
+            "format": "double"
+          },
+          "qtdeParcelas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

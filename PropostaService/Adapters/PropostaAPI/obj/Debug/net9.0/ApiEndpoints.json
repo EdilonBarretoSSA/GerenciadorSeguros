@@ -1,0 +1,95 @@
+[
+  {
+    "ContainingType": "PropostaAPI.Controllers.PropostaController",
+    "Method": "Put",
+    "RelativePath": "AlterarStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroProposta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Description": "M\u00E9todo respons\u00E1vel por alterar os status das propostas de seguro"
+  },
+  {
+    "ContainingType": "PropostaAPI.Controllers.PropostaController",
+    "Method": "Post",
+    "RelativePath": "Criar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propostaSeguro",
+        "Type": "Domain.Entitys.PropostaSeguro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Description": "M\u00E9todo respons\u00E1vel pela cria\u00E7\u00E3o das propostas de seguro"
+  },
+  {
+    "ContainingType": "PropostaAPI.Controllers.PropostaController",
+    "Method": "Get",
+    "RelativePath": "Listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroProposta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cpf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "rg",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Domain.Entitys.PropostaSeguro, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Description": "M\u00E9todo respons\u00E1vel por listar as propostas de seguro"
+  }
+]
